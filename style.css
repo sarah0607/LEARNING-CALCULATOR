@@ -1,0 +1,136 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: blanchedalmond;
+}
+.calculator-grid {
+    display: grid;
+     padding: 4em;
+   justify-content: center;
+   align-items: center;
+   grid-template-areas:
+   'ab ab ab ab' 
+   'a b c c'
+   'd e f g'
+   'h i j k'
+   'l m n o'
+   'p q r r';
+   gap: 3px;
+}
+.ac{
+    grid-area: a;
+    background-color: rgb(39, 131, 100);
+    color: orange;
+    font-weight: 600;
+
+}
+.del{
+    grid-area: b;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.div{
+    grid-area: c;
+   background-color:  rgb(68, 59, 92);
+}
+.one{
+    grid-area: d;
+
+}
+.two{
+    grid-area: e;
+
+}
+.three{
+    grid-area: f;
+    
+}
+.plus{
+    grid-area: g;
+    background-color:  rgb(68, 59, 92);
+}
+.four{
+    grid-area: h;
+    
+}
+.five{
+    grid-area: i;
+    
+}
+.six{
+    grid-area: j;
+}
+.mul{
+    grid-area: k;
+    background-color:  rgb(68, 59, 92);
+}
+.seven{
+    grid-area: l;
+}
+.eight{
+    grid-area: m;
+    
+}
+.nine{
+    grid-area: n;
+    
+}
+.sub{
+    grid-area: o;
+    background-color:  rgb(68, 59, 92);
+    
+}
+.dot{
+    grid-area: p;
+    
+}
+.zero{
+    grid-area: q;
+    
+}
+.equal{
+    grid-area: r;
+   background-color: rgb(39, 131, 100);
+}
+button {
+    color: azure;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 3px solid rgb(241, 87, 15);
+    outline: none;
+    background-color: rgb(37, 32, 51);
+    padding: 0.5em;
+    
+}
+button:hover{
+     background-color: brown;
+     transition-duration: 0.4s;
+}
+
+  .output{
+    grid-area: ab;
+    background-color: rgba(65, 63, 63, 0.726);
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2em;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 3px solid rgb(85, 62, 62);
+  }
+
+  .output .previous-operand{
+    color: rgb(255, 255, 255. 0.75);
+    font-size: 1.5rem;
+  }
+
+  .output .current-operand{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+  }
